@@ -1,0 +1,32 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        Title="Tic Tac Toe" Height="475" Width="800">
+
+    <Canvas>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard0" Content=" " Canvas.Left="26" Canvas.Top="22" Height="100" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="72"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard1" Content=" " Canvas.Left="126" Canvas.Top="22" Height="100" Width="100" FontSize="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard2" Content=" " Canvas.Left="226" Canvas.Top="22" Height="100" Width="100" FontSize="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard3" Content=" " Canvas.Left="26" Canvas.Top="122" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard4" Content=" " Canvas.Left="126" Canvas.Top="122" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard5" Content=" " Canvas.Left="226" Canvas.Top="122" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard6" Content=" " Canvas.Left="26" Canvas.Top="222" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard7" Content=" " Canvas.Left="126" Canvas.Top="222" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Click="PlayerMoveClick" x:Name="btnBoard8" Content=" " Canvas.Left="226" Canvas.Top="222" Height="100" Width="100" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <GroupBox Height="95" Header="Status" Width="300" HorizontalAlignment="Left" Canvas.Top="341" VerticalAlignment="Center" Canvas.Left="26" FontSize="14"/>
+        <GroupBox Height="200" Header="Stats" Width="368" HorizontalAlignment="Center" Canvas.Top="22" VerticalAlignment="Top" Canvas.Left="378" FontSize="14">
+            <StackPanel Height="119" Margin="12,0,10,0" Width="NaN">
+                <Label x:Name="lblPlayer1Wins" Content="Player 1 Wins: " FontSize="20"/>
+                <Label x:Name="lblPlayer2Wins" Content="Player 2 Wins: " FontSize="18"/>
+                <Label x:Name="lblTies" Content="Ties: " FontSize="18"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnStartGame" Content="Start" Canvas.Left="458" Canvas.Top="259" Height="55" Width="208" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnStartGame_Click"/>
+        <TextBox x:Name="txtStatus" Canvas.Left="40" TextWrapping="Wrap" Canvas.Top="368" Width="268" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52"/>
+
+    </Canvas>
+</Window>
